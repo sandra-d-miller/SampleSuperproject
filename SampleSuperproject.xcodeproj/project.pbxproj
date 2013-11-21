@@ -21,6 +21,7 @@
 		074D794E183D915D00446F60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 074D7930183D915D00446F60 /* UIKit.framework */; };
 		074D7956183D915D00446F60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 074D7954183D915D00446F60 /* InfoPlist.strings */; };
 		074D7958183D915D00446F60 /* SampleSuperprojectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 074D7957183D915D00446F60 /* SampleSuperprojectTests.m */; };
+		075FEA91183D9C10000580A3 /* libSampleSubproject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 075FEA8C183D9A3A000580A3 /* libSampleSubproject.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 074D7928183D915D00446F60;
 			remoteInfo = SampleSuperproject;
+		};
+		075FEA8B183D9A3A000580A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 075FEA86183D9A3A000580A3 /* SampleSubproject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 074D78ED183D76E600446F60;
+			remoteInfo = SampleSubproject;
+		};
+		075FEA8D183D9A3A000580A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 075FEA86183D9A3A000580A3 /* SampleSubproject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 074D78FD183D76E600446F60;
+			remoteInfo = SampleSubprojectTests;
+		};
+		075FEA8F183D9BEB000580A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 075FEA86183D9A3A000580A3 /* SampleSubproject.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 074D78EC183D76E600446F60;
+			remoteInfo = SampleSubproject;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -53,6 +75,7 @@
 		074D7953183D915D00446F60 /* SampleSuperprojectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleSuperprojectTests-Info.plist"; sourceTree = "<group>"; };
 		074D7955183D915D00446F60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		074D7957183D915D00446F60 /* SampleSuperprojectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleSuperprojectTests.m; sourceTree = "<group>"; };
+		075FEA86183D9A3A000580A3 /* SampleSubproject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SampleSubproject.xcodeproj; path = ../SampleSubproject/SampleSubproject.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				075FEA91183D9C10000580A3 /* libSampleSubproject.a in Frameworks */,
 				074D792F183D915D00446F60 /* CoreGraphics.framework in Frameworks */,
 				074D7931183D915D00446F60 /* UIKit.framework in Frameworks */,
 				074D792D183D915D00446F60 /* Foundation.framework in Frameworks */,
@@ -84,6 +108,7 @@
 			children = (
 				074D7932183D915D00446F60 /* SampleSuperproject */,
 				074D7951183D915D00446F60 /* SampleSuperprojectTests */,
+				075FEA86183D9A3A000580A3 /* SampleSubproject.xcodeproj */,
 				074D792B183D915D00446F60 /* Frameworks */,
 				074D792A183D915D00446F60 /* Products */,
 			);
@@ -152,6 +177,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		075FEA87183D9A3A000580A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				075FEA8C183D9A3A000580A3 /* libSampleSubproject.a */,
+				075FEA8E183D9A3A000580A3 /* SampleSubprojectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,6 +200,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				075FEA90183D9BEB000580A3 /* PBXTargetDependency */,
 			);
 			name = SampleSuperproject;
 			productName = SampleSuperproject;
@@ -215,6 +250,12 @@
 			mainGroup = 074D7920183D915D00446F60;
 			productRefGroup = 074D792A183D915D00446F60 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 075FEA87183D9A3A000580A3 /* Products */;
+					ProjectRef = 075FEA86183D9A3A000580A3 /* SampleSubproject.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				074D7928183D915D00446F60 /* SampleSuperproject */,
@@ -222,6 +263,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		075FEA8C183D9A3A000580A3 /* libSampleSubproject.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSampleSubproject.a;
+			remoteRef = 075FEA8B183D9A3A000580A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		075FEA8E183D9A3A000580A3 /* SampleSubprojectTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SampleSubprojectTests.xctest;
+			remoteRef = 075FEA8D183D9A3A000580A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		074D7927183D915D00446F60 /* Resources */ = {
@@ -270,6 +328,11 @@
 			isa = PBXTargetDependency;
 			target = 074D7928183D915D00446F60 /* SampleSuperproject */;
 			targetProxy = 074D794F183D915D00446F60 /* PBXContainerItemProxy */;
+		};
+		075FEA90183D9BEB000580A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SampleSubproject;
+			targetProxy = 075FEA8F183D9BEB000580A3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -380,7 +443,17 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleSuperproject/SampleSuperproject-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/include\"",
+				);
 				INFOPLIST_FILE = "SampleSuperproject/SampleSuperproject-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,7 +466,17 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleSuperproject/SampleSuperproject-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/include\"",
+				);
 				INFOPLIST_FILE = "SampleSuperproject/SampleSuperproject-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -460,6 +543,7 @@
 				074D795D183D915D00446F60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		074D795E183D915D00446F60 /* Build configuration list for PBXNativeTarget "SampleSuperprojectTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +552,7 @@
 				074D7960183D915D00446F60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
